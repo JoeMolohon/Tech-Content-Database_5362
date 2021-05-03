@@ -1,0 +1,285 @@
+/*
+LIST OF COLORS
+Pale blue: #3061FF 
+Off-white: #efefef
+Very light pink: #fff2f2;
+Light grey: #e6e6e6;
+Creme gold: #ffd57b;
+Logo gold: ffe8b7;
+Final logo gold: ffeeca;
+Title blue: 3d99dd;
+Deep blue: #194cab;
+Button hover: f51515;
+*/
+
+@font-face {
+	font-family: '3MCircularTT-Regular';
+	src: url('fonts/3MCircularTT-Regular.ttf')
+}
+
+@font-face {
+	font-family: '3MCircularTT-Bold';
+	src: url('fonts/3MCircularTT-Bold.ttf');
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 288px 350px 642px;
+	max-width: 1280px;
+	/*grid-template-rows: 2nd row was previously 100px*/
+	grid-template-rows: 189px minmax(100px, auto) minmax(360px, auto) minmax(314px, auto) 115px;
+}
+
+.logo {
+	background-color: #ffeeca;
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+
+.banner {
+	background-color: pink;
+	grid-column: 2 / 4;
+	grid-row: 1 / 2;
+}
+
+nav {
+	background-color: #ffd57b;
+	grid-column: 1 / 2;
+	grid-row: 2 / 5;
+}
+
+nav .text {
+	margin-left: 20px;
+}
+
+nav h1 {
+	font-family: '3MCircularTT-Regular', Verdana;
+	font-size: 23px;
+}
+
+nav h2 {
+	font-family: '3MCircularTT-Regular', Verdana;
+	font-size: 21px;
+}
+
+nav li {
+	font-family: Verdana;
+	font-size: 18px;
+}
+
+main {
+	background-color: maroon;
+	display: grid;
+	grid-column: 2 / 4;
+	grid-row: 2 / 5;
+}
+
+main .product_content {
+	background-color: teal;
+	display: grid;
+	grid-template-rows: minmax(100px, auto) minmax(360px, auto) minmax(314px, auto);
+	grid-template-columns: 350px 642px;
+}
+
+main .product_name {
+	background-color: #efefef;
+	display: grid;
+	grid-column: 1 / 3;
+	grid-row: 1 / 2;
+	align-content: center;
+}
+
+	.product_name h1 {
+		font-family: '3MCircularTT-Bold', Verdana;
+		font-weight: normal;
+		font-size: 32px;
+		margin-left: 15px;
+		color: #194cab;
+	}
+
+main .visual {
+	background-color: #efefef;
+	display: grid;
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	justify-content: center;
+	align-content: center;
+}
+
+	.visual img {
+		max-width: 310px;
+		
+	}
+
+	.image1 {
+		position: relative;
+		border: solid #194cab 5px;
+	}
+
+	.image2 {
+		position: absolute;
+		top: 330px;
+		left: 500px;
+		/*border: solid red 5px;*/
+	}
+
+main .specs_table {
+	background-color: #efefef;
+	display: grid;
+	grid-column: 1 / 2;
+	grid-row: 3 / 4;
+}
+
+	.specs_table p {
+		margin: 10px 15px 12px 15px;
+		font-family: '3MCircularTT-Regular', Verdana;
+		font-size: 22px;
+	}
+
+	table {
+		border: solid #194cab 1px;
+		border-collapse: collapse;
+		margin: 0 15px 20px 15px;
+	}
+
+		th {
+			border: solid #194cab 1px;
+			text-align: left;
+			padding: 0 0 0 10px;
+			font-family: '3MCircularTT-Bold', Verdana;
+			font-size: 16px;
+			font-weight: normal;
+			vertical-align: center;
+		}
+
+		td {
+			border: solid #194cab 1px;
+			padding: 0 0 0 10px;
+			font-family: '3MCircularTT-Regular', Verdana;
+			font-size: 16px;
+			vertical-align: center;
+		}
+
+main .description {
+	background-color: #efefef;
+	display: grid;
+	grid-column: 2 / 3;
+	grid-row: 2 / 4;
+}
+
+	.description .content {
+		margin-left: 10px;
+		margin-right: 15px;
+	}
+
+	.description h2 {
+		font-family: '3MCircularTT-Regular', Verdana;
+		font-size: 26px;
+		margin-bottom: 0;
+		/*margin: 23px 0 0 10px;*/
+	}
+
+	.description p {
+		font-family: '3MCircularTT-Regular', Verdana;
+		font-size: 18px;
+		/*margin: 0 0 0 10px;*/
+	}
+
+	.description li {
+		font-family: '3MCircularTT-Regular', Verdana;
+		font-size: 18px;
+		margin-top: 10px;
+		margin-left: -5px;
+	}
+
+	.description #button {
+		/*margin-left: 10px;*/
+		margin-top: 45px;
+		font-family: '3MCircularTT-Regular', Verdana;
+		font-size: 20px;
+		display: inline-block;
+		/*padding: 10px;*/
+		margin-left: 20px;
+	}
+
+		.description #button a {
+			padding: 15px;
+			background-color: #194cab;
+			color: #efefef;
+			text-decoration: none;
+			border: solid #194cab 2px;
+		}
+
+		.description #button a:hover {
+			background-color: #f51515;
+			text-decoration: underline;
+			border: solid #194cab 4px;
+		}
+
+/*main h1 {
+	font-family: '3MCircularTT-Bold', Verdana;
+	font-weight: normal;
+	font-size: 24px;
+}*/
+
+/*main h2 {
+
+}
+
+main p {
+	font-family: Verdana;
+	font-size: 16px;
+}
+
+main li {
+
+}*/
+
+.button p {
+	font-family: '3MCircularTT-Regular', Verdana;
+	font-size: 12px;
+}
+
+.contact h2 {
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.contact p {
+	font-family: Arial;
+	font-size: 10px;
+}
+
+footer {
+	background-color: #ffeeca;
+	grid-column: 1 / 4;
+	grid-row: 5 / 6;
+	font-family: Verdana;
+	font-size: 16px;
+	display: grid;
+}
+
+	footer #logo_science_applied {
+		display: grid;
+		grid-column-start: 1;
+		align-content: center;
+		margin-left: 20px;
+	}
+
+	footer #copyright {
+		display: grid;
+		grid-column-end: 4;
+		text-align: right;
+		align-content: center;
+		margin-right: 20px;
+	}
